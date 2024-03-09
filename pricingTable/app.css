@@ -56,6 +56,7 @@ body {
     display: flex;
     justify-content: center;
     min-height: 100vh;
+    background: linear-gradient(to bottom, #529ffb 40%, #ffffff 40%);
 }
 
 .panel {
@@ -63,5 +64,109 @@ body {
     width: 100%;
     max-width: 960px;
     padding: 15px 25px;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
     border-radius: 10px;
+    text-transform: uppercase;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1); /* Efek bayangan */
 }
+
+.pricing-plan {
+    border-right: 1px solid #e1f1ff;
+} 
+
+.pricing-plan:last-child {
+    border-right: none;
+}  
+
+.pricing-plan:last-child {
+    border-bottom: none;
+}
+
+.pricing-img {
+    margin-bottom: 25px;
+    max-width: 100%;
+}
+
+.pricing-header {
+    color: #888;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.pricing-feature {
+    color: #015ff9;
+    margin: 50px 0 25px;
+}
+
+.pricing-item {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 10px 0;
+    border-top: 1px solid #e1f1ff;
+    margin: 0 40px;
+}
+
+.pricing-item:last-child {
+    border-bottom: 1px solid #e1f1ff;
+}
+
+.pricing-price {
+    color: #016ff9;
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.pricing-button {
+    border: 1px solid #9dd1ff;
+    border-radius: 10px;
+    color: #348efe;
+    display: inline-block;
+    padding: 15px 5px;
+    text-decoration: none;
+    margin: 25px 0;
+}
+.pricing-button.is-featured {
+    background-color: #48aaff;
+    color: white;
+}
+
+.pricing-button:hover,
+.pricing-button:focus {
+    background-color: #e1f1ff;
+}
+
+.pricing-button.is-featured:hover,
+.pricing-button.is-featured:focus {
+    background-color: #269aff;
+    color: white;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .panel {
+        flex-direction: column;
+    }
+
+    .pricing-plan {
+        border-bottom: none;
+        border-right: 1px solid #e1f1ff;
+        padding: 25px 50px;
+        border-right: ;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
